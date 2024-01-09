@@ -1,15 +1,24 @@
 #friends-display-link {
-  text-align: center;
-  display: block;
+  display: flex;
+  justify-content: space-between;
   background-color: #fafafa;
-  padding: 15px 0px;
+  padding: 15px 18px;
   font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: -15px;
+  margin: -15px 24px 10px 24px;
+  border-radius: 30px;
+  font-size: 14px;
 }
-
-#friends-display-link i {
-  color: rgba(0, 0, 0, 0.3);
+.friends-display-link__span {
+  background-color: #7f7f7f;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 24px;
+}
+.user-component__column__friends-screen {
+  border: 1px solid #e3e3e3;
+  border-radius: 24px;
+  padding: 6px 8px;
+  font-size: 14px;
 }
 
 .friends-screen {
@@ -27,6 +36,115 @@
   display: flex;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.update-profile {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.user-component__friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.user-component__friends img {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+.user-component__friends span {
+  padding-top: 8px;
+}
+.pung {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.pung div {
+  width: 100px;
+}
+.pung__column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 130px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.advertisement {
+  padding-top: 18px;
+}
+.advertisement__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding-right: 24px;
+}
+.advertisement__container img {
+  width: 60px;
+  height: 50px;
+}
+.advertisement__content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+.advertisement__content--bold {
+  font-weight: 600;
+  font-size: 24px;
+}
+.advertisement__content--regular {
+  color: #a2a2a2;
+  font-size: 18px;
+  padding-top: 6px;
+}
+
+.fa-cake-candles {
+  background-color: #f56a70;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 20px;
+  margin-right: 12px;
+}
+
+.user-component__column .fa-comment {
+  background-color: var(--yellow);
+  padding: 12px;
+  border-radius: 20px;
+  margin-right: 12px;
+}
+
+.channel__container {
+  margin-top: 12px;
+}
+.channel__column {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 120px;
+  height: 150px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.channel__column img {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
 }
 
 @keyframes hideSplashScreen {
